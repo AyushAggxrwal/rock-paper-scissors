@@ -26,7 +26,7 @@ function getChoices() {
 let playerScore = 0, computerScore = 0;
 
 // Function to determine the winner
-function result(playerChoice, computerChoice) {
+function determineWinner(playerChoice, computerChoice) {
   console.log(`\nPlayer: ${playerChoice}             Computer: ${computerChoice}\n`);
   if (CHOICES[playerChoice].beats === computerChoice) {
     playerScore++;
